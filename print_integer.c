@@ -6,7 +6,9 @@
  *
  * Return: The number of digits in the integer.
  */
-int print_integer(int num) {
+int print_integer(int num)
+{
+    int i = 0;
     int len = 0; /* Variable to store the number of digits */
     char buffer[12]; /* Buffer to store the digits as characters */
     int is_negative = 0; /* Flag to indicate if the number is negative */
@@ -21,7 +23,6 @@ int print_integer(int num) {
         num = -num; /* Convert the number to positive */
     }
 
-    int i = 0;
     while (num > 0) {
         buffer[i] = '0' + (num % 10); /* Get the rightmost digit and convert it to character */
         num /= 10; /* Remove the rightmost digit */
