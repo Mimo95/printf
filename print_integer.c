@@ -11,7 +11,7 @@ int print_integer(int num)
 {
 	int i = 0;
 	int len = 0;
-	char buffer[12];
+	char buffer[1024];
 	int is_negative = 0;
 
 	if (num == 0)
